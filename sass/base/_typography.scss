@@ -32,3 +32,31 @@ body {
     animation-timing-function: ease-out;
   }
 }
+
+.heading-secondary {
+  font-size: $default-heading-size;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient($gradient-default);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .5s ease;
+
+  &:hover {
+    transform: skewY(.2deg) skewX(.3deg) scale(1.01);
+  }
+}
+
+.heading-tertiary {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
